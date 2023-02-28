@@ -20,7 +20,7 @@ export default function Product({ product }: ProductProps) {
   const { isFallback } = useRouter();
 
   if (isFallback) {
-    return <div>Loading...</div>;
+    return <p>Loading...</p>
   }
   return (
     <ProductContainer>

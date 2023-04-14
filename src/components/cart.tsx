@@ -1,15 +1,15 @@
-import { ShoppingBag, X } from 'lucide-react'
+import { X } from 'lucide-react'
 import * as Dialog from '@radix-ui/react-dialog'
 
-import { Button, CartClose, CartContent } from '../styles/components/cart'
+import { CartButton } from './cartButton'
+
+import { CartClose, CartContent } from '../styles/components/cart'
 
 export function Cart() {
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <Button>
-          <ShoppingBag />
-        </Button>
+        <CartButton />
       </Dialog.Trigger>
 
       <Dialog.Portal>

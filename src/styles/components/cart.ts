@@ -13,12 +13,14 @@ export const Button = styled('button', {
   borderRadius: '0.5rem',
   backgroundColor: '$gray800',
 
+  transition: 'filter 0.2s',
+
   svg: {
     color: '$gray300',
   },
 
   '&:hover': {
-    backgroundColor: '$green500',
+    filter: 'brightness(0.8)'
   }
 })
 

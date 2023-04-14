@@ -9,7 +9,9 @@ export function Cart() {
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <CartButton />
+        <CartButton
+          color="gray"
+        />
       </Dialog.Trigger>
 
       <Dialog.Portal>

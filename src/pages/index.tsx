@@ -11,6 +11,7 @@ import { useKeenSlider } from 'keen-slider/react'
 import { HomeContainer, Product } from "../styles/pages/home";
 
 import 'keen-slider/keen-slider.min.css';
+import { CartButton } from "../components/cartButton";
 
 interface HomeProps {
   products: {
@@ -46,8 +47,13 @@ export default function Home({ products }: HomeProps) {
               <Image src={product.imageURL} width={520} height={480} alt='Camiseta 1' />
 
               <footer>
-                <strong>{product.name}</strong>
-                <span>{product.price}</span>
+                <div>
+                  <strong>{product.name}</strong>
+                  <span>{product.price}</span>
+                </div>
+                <CartButton
+                  color="green"
+                />
               </footer>
             </Product>
           </Link>

@@ -10,15 +10,32 @@ export const Button = styled('button', {
   width: '3rem',
   height: '3rem',
   borderRadius: '0.5rem',
-  backgroundColor: '$gray800',
 
   transition: 'filter 0.2s',
 
-  svg: {
-    color: '$gray300',
+  '&:disabled': {
+    opacity: 0.6,
+    cursor: 'not-allowed',
   },
 
-  '&:hover': {
-    filter: 'brightness(0.8)'
+  variants: {
+    color: {
+      green: {
+        backgroundColor: '$green500',
+        color: '$white',
+
+        '&:not(:disabled):hover': {
+          filter: 'brightness(0.8)'
+        },
+      },
+      gray: {
+        backgroundColor: '$gray800',
+        color: '$gray500',
+
+        '&:not(:disabled):hover': {
+          filter: 'brightness(0.8)'
+        },
+      }
+    }
   }
 })

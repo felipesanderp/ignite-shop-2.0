@@ -1,8 +1,9 @@
-import Image from 'next/image'
-import { ShoppingBag } from 'lucide-react'
-
-import { Header, Button } from '../styles/components/header'
 import Link from 'next/link'
+import Image from 'next/image'
+
+import { Cart } from './cart'
+
+import { Header } from '../styles/components/header'
 
 export function AppHeader() {
   return (
@@ -11,9 +12,7 @@ export function AppHeader() {
         <Image src='/logo.svg' width={100} height={100} alt="Logo" />
       </Link>
 
-      <Button>
-        <ShoppingBag />
-      </Button>
+      <Cart />
     </Header>
   )
 }
